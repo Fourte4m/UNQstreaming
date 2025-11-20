@@ -69,9 +69,12 @@ html {
   transition: all 0.5s ease-in-out;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-} 
+}
 
 .triple-main {
+  width: 260px;
+  max-width: 40%;    
+  transform: scale(1.1);
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -79,13 +82,9 @@ html {
   opacity: 0;
 }
 
-.triple-main {
-  width: 260px;
-  transform: scale(1.1);
-}
-
 .triple-small {
   width: 170px;
+  max-width: 28%;     
   opacity: 0.8;
 }
 
@@ -95,26 +94,36 @@ html {
   opacity: 1;
 }
 
-@media (max-width: 800px) {
-.py-5 .row > .col-md-4 {
-    margin-bottom: 30px;
+@media (max-width: 700px) {
+
+  .triple-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    margin-top: 40px;   
+    margin-bottom: 20px;
   }
 
   .triple-main {
-    width: 180px;
+    width: 40%;   
     transform: scale(1);
   }
 
   .triple-small {
-    width: 120px;
+    width: 25%;  
+    margin-left: -9px;
+    margin-right: -9px;
   }
 
-  .triple-carousel-container {
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
+  .triple-carousel-container img {
+    height: auto;
+    object-fit: contain;
   }
 }
+
+
 
 /* PROGRAMACIÓN */
 .program-card {
@@ -453,4 +462,5 @@ footer {
     margin-bottom: -49px !important;
 
 }
+
 

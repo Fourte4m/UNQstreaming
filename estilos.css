@@ -95,7 +95,7 @@ html {
   opacity: 1;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 700px) {
 .py-5 .row > .col-md-4 {
     margin-bottom: 30px;
   }
@@ -453,3 +453,4 @@ footer {
     margin-bottom: -49px !important;
 
 }
+
